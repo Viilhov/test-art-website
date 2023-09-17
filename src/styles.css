@@ -24,9 +24,6 @@ body {
   padding-left: 150px;
   margin: 50px 0 100px 0;
 }
-.active {
-  color: var(--second-tx-color);
-}
 
 .sidebar .logo h1 {
   margin: 0;
@@ -35,6 +32,9 @@ body {
 .sidebar .logo p {
   margin: 0;
   font-size: 15px;
+}
+.sidebar a.active {
+  color: var(--second-tx-color);
 }
 
 .sidebar ul {
@@ -63,9 +63,13 @@ body {
 
 .content {
   flex: 1;
-  padding: 20px;
+
   background-color: var(--main-bg-color);
   color: var(--main-tx-color);
+}
+
+main .main-img {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
