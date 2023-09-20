@@ -4,15 +4,23 @@
   --main-tx-color: #e7eaf6;
   --second-tx-color: #ceaa60;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Merriweather", serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  flex-grow: 1;
 }
 
 .sidebar {
@@ -84,6 +92,24 @@ footer p {
 footer p a {
   text-decoration: none;
   color: var(--second-tx-color);
+}
+
+.container-gallery {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 5%;
+  padding: 8%;
+  width: 100%;
+}
+.gallery img {
+  width: 100%;
 }
 
 @media (max-width: 992px) {
