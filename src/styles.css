@@ -8,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -87,6 +88,14 @@ main .main-img {
 .main-text {
   padding: 50px 30px 100px 30px;
   line-height: 2;
+}
+.container-gallery {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
 }
 
 footer p {
